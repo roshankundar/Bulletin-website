@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+    background: radial-gradient(#fff,hsl(212, 79%, 45%));  
+   /* background: #2691d9;  */
+  height: 100vh;
+  overflow: hidden;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #66757F;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .form{
+  position: relative;
+  border-bottom: 2px solid #66757F;
+  margin: 30px 0;
+}
+.form input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.form label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #66757F;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.form span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+ .form input:focus ~ label,
+.form input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+} 
+
+.form input:focus ~ span::before,
+.form input:valid ~ span::before{
+  width: 100%;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  /* background: #2691d9; */
+  background:rgb(26, 25, 25);
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #2691d9;
+  transition: .2s;
+  background-color:  #2691d9;
+}
+input[type="submit"]:active{
+  /*  box-shadow: 0 5px #666; */
+  transform: translateY(7px );
+ 
+  transition: 0.1s;
+   background-color:#0b4be1; 
+}
+
+.abc{
+  margin-bottom:30px;
+  display:inline-block;
+ color:#66757F ;
+}
+.club{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration:underline;
+margin-right: 2px;
+color:#66757F ;
+display:inline;
+
+}
+.club1{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration:underline;
+margin-right: 2px;
+color: #66757F;
+}
+
